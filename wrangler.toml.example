@@ -1,0 +1,21 @@
+name = "go-look-see-talleres"
+compatibility_date = "2026-09-09"
+pages_build_output_dir = "."
+
+[vars]
+ALLOWED_EMAIL_DOMAIN = "iberia.es"
+ENVIRONMENT = "production"
+MAIL_FROM = "Go, Look & See <REEMPLAZAR_CON_UN_REMITENTE_VERIFICADO>"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "go-look-see-talleres"
+database_id = "REEMPLAZAR_CON_EL_ID_DE_TU_BASE_D1"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "go-look-see-talleres-photos"
+
+[[send_email]]
+name = "EMAIL"
